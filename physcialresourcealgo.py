@@ -20,7 +20,7 @@ class PhysicalResourceAwareAlgorithm:
         sum_weights = 0
         
         for rho_k in h_j:
-            # Determine weight based on whether it's a full assignment [cite: 3406]
+            # Determine weight based on whether it's a full assignment 
             w = self.weight_full if rho_k == self.max_prbs[j] else self.weight_partial
             weighted_sum += w * rho_k
             sum_weights += w
